@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+        body {
+            background-image: url("https://images.pexels.com/photos/1566909/pexels-photo-1566909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: "Fredoka", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            color: #14181b;
+            margin: 0;
+        }
+        
+        .container {
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+            background-color: #f1f4f8;
+            padding: 40px 56px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .slot-machine {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .slot {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .slot img {
+            width: 80px;
+            height: 80px;
+        }
+        .button {
+            width: 144px;
+            font-family: "Fredoka", sans-serif;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .score {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 480px) {
+            .container{
+                padding: 40px 32px;
+            }
+
+            .slot{
+                margin-right: 12px;
+            }
+        }

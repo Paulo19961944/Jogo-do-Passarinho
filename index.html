@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Passarinho</title>
+    <link rel="shortcut icon" href="src/images/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/styles/styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Jogo do Passarinho</h1>
+    <div class="slot-machine">
+        <div class="slot" id="slot1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3-HsLxYs6nHwGv1TEshPhfHUyO_u537IxEw&s" alt="Passarinho 1">
+        </div>
+        <div class="slot" id="slot2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3-HsLxYs6nHwGv1TEshPhfHUyO_u537IxEw&s" alt="Passarinho 2">
+        </div>
+        <div class="slot" id="slot3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3-HsLxYs6nHwGv1TEshPhfHUyO_u537IxEw&s" alt="Passarinho 3">
+        </div>
+    </div>
+    <button class="button" onclick="spin()">Spin</button>
+    <div class="score">Pontuação: <span id="score">0</span></div>
+</div>
+
+<script src="src/scripts/script.js"></script>
+
+</body>
+</html>

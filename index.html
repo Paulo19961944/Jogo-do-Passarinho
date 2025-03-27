@@ -1,31 +1,53 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- Declara o tipo de documento como HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
 <head>
+    <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres especiais -->
     <meta charset="UTF-8">
+    <!-- Define a visualização para dispositivos móveis, ajustando a escala da página -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o título da página que aparece na aba do navegador -->
     <title>Jogo do Passarinho</title>
+    <!-- Define o ícone que aparece na aba do navegador -->
     <link rel="shortcut icon" href="src/images/Favicon.png" type="image/x-icon">
+    <!-- Vincula o arquivo CSS para estilizar a página -->
     <link rel="stylesheet" href="src/styles/styles.css">
 </head>
 <body>
 
+<!-- Início do contêiner principal do jogo -->
 <div class="container">
+    <!-- Título principal do jogo -->
     <h1>Jogo do Passarinho</h1>
-    <div class="slot-machine">
-        <div class="slot" id="slot1">
+    
+    <!-- Seção que contém a máquina de slots -->
+    <section class="slot-machine">
+        <!-- Artigo representando o primeiro slot da máquina -->
+        <article class="slot" id="slot1">
+            <!-- Imagem do primeiro pássaro -->
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3-HsLxYs6nHwGv1TEshPhfHUyO_u537IxEw&s" alt="Passarinho 1">
-        </div>
-        <div class="slot" id="slot2">
+        </article>
+        
+        <!-- Artigo representando o segundo slot da máquina -->
+        <article class="slot" id="slot2">
+            <!-- Imagem do segundo pássaro -->
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3-HsLxYs6nHwGv1TEshPhfHUyO_u537IxEw&s" alt="Passarinho 2">
-        </div>
-        <div class="slot" id="slot3">
+        </article>
+        
+        <!-- Artigo representando o terceiro slot da máquina -->
+        <article class="slot" id="slot3">
+            <!-- Imagem do terceiro pássaro -->
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3-HsLxYs6nHwGv1TEshPhfHUyO_u537IxEw&s" alt="Passarinho 3">
-        </div>
-    </div>
+        </article>
+    </section>
+    
+    <!-- Botão para iniciar a rotação dos slots -->
     <button class="button" onclick="spin()">Spin</button>
+    
+    <!-- Div que exibe a pontuação atual do jogador -->
     <div class="score">Pontuação: <span id="score">0</span></div>
 </div>
 
+<!-- Vincula o arquivo JavaScript que contém a lógica do jogo -->
 <script src="src/scripts/script.js"></script>
 
 </body>

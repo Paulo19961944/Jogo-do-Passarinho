@@ -1,73 +1,135 @@
+/* Importa a fonte "Fredoka" do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
-        body {
-            background-image: url("https://images.pexels.com/photos/1566909/pexels-photo-1566909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-            background-repeat: no-repeat;
-            background-size: cover;
-            font-family: "Fredoka", sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f8ff;
-            color: #14181b;
-            margin: 0;
-        }
-        
-        .container {
-            width: 80%;
-            max-width: 500px;
-            text-align: center;
-            background-color: #f1f4f8;
-            padding: 40px 56px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        }
-        .slot-machine {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 20px;
-        }
-        .slot {
-            width: 100px;
-            height: 100px;
-            border: 2px solid #000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #fff;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-        .slot img {
-            width: 80px;
-            height: 80px;
-        }
-        .button {
-            width: 144px;
-            font-family: "Fredoka", sans-serif;
-            padding: 10px 20px;
-            font-size: 18px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .button:hover {
-            background-color: #45a049;
-        }
-        .score {
-            margin-top: 20px;
-            font-size: 24px;
-            font-weight: bold;
-        }
 
-        @media screen and (max-width: 480px) {
-            .container{
-                padding: 40px 32px;
-            }
+/* Estiliza o corpo da página */
+body {
+    /* Define a imagem de fundo da página */
+    background-image: url("https://images.pexels.com/photos/1566909/pexels-photo-1566909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    /* Impede que a imagem de fundo se repita */
+    background-repeat: no-repeat;
+    /* Ajusta o tamanho da imagem de fundo para cobrir toda a área disponível */
+    background-size: cover;
+    /* Define a fonte padrão para o corpo da página */
+    font-family: "Fredoka", sans-serif;
+    /* Define o layout do corpo como flexbox */
+    display: flex;
+    /* Centraliza o conteúdo horizontalmente */
+    justify-content: center;
+    /* Centraliza o conteúdo verticalmente */
+    align-items: center;
+    /* Define a altura da página para ocupar 100% da altura da tela */
+    height: 100vh;
+    /* Define uma cor de fundo para o corpo */
+    background-color: #f0f8ff;
+    /* Define a cor do texto */
+    color: #14181b;
+    /* Remove as margens padrão do body */
+    margin: 0;
+}
 
-            .slot{
-                margin-right: 12px;
-            }
-        }
+/* Estiliza o contêiner principal */
+.container {
+    /* Define a largura do contêiner como 80% da largura da tela */
+    width: 80%;
+    /* Define uma largura máxima de 500px para o contêiner */
+    max-width: 500px;
+    /* Centraliza o texto dentro do contêiner */
+    text-align: center;
+    /* Define a cor de fundo do contêiner */
+    background-color: #f1f4f8;
+    /* Adiciona um espaçamento interno (padding) no contêiner */
+    padding: 40px 56px;
+    /* Arredonda os cantos do contêiner */
+    border-radius: 10px;
+    /* Adiciona uma sombra ao redor do contêiner */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estiliza o layout da máquina caça-níqueis */
+.slot-machine {
+    /* Organiza os itens em linha com espaçamento igual entre eles */
+    display: flex;
+    /* Define o espaçamento entre os slots */
+    justify-content: space-around;
+    /* Adiciona uma margem inferior para separar do conteúdo abaixo */
+    margin-bottom: 20px;
+}
+
+/* Estiliza cada slot individualmente */
+.slot {
+    /* Define a largura e a altura do slot */
+    width: 100px;
+    height: 100px;
+    /* Adiciona uma borda ao redor do slot */
+    border: 2px solid #000;
+    /* Define o layout do slot como flexbox */
+    display: flex;
+    /* Centraliza o conteúdo dentro do slot horizontalmente */
+    justify-content: center;
+    /* Centraliza o conteúdo dentro do slot verticalmente */
+    align-items: center;
+    /* Define a cor de fundo do slot */
+    background-color: #fff;
+    /* Arredonda os cantos do slot */
+    border-radius: 10px;
+    /* Impede que o conteúdo transborde do slot */
+    overflow: hidden;
+}
+
+/* Estiliza as imagens dentro dos slots */
+.slot img {
+    /* Define o tamanho das imagens dentro dos slots */
+    width: 80px;
+    height: 80px;
+}
+
+/* Estiliza o botão */
+.button {
+    /* Define a largura do botão */
+    width: 144px;
+    /* Define a fonte do botão */
+    font-family: "Fredoka", sans-serif;
+    /* Adiciona espaçamento interno ao botão */
+    padding: 10px 20px;
+    /* Define o tamanho da fonte */
+    font-size: 18px;
+    /* Define a cor de fundo do botão */
+    background-color: #4CAF50;
+    /* Define a cor do texto do botão */
+    color: white;
+    /* Remove a borda do botão */
+    border: none;
+    /* Arredonda os cantos do botão */
+    border-radius: 5px;
+    /* Define o cursor como pointer para indicar que o botão é clicável */
+    cursor: pointer;
+}
+
+/* Estiliza o botão quando o mouse passa sobre ele */
+.button:hover {
+    /* Altera a cor de fundo do botão ao passar o mouse sobre ele */
+    background-color: #45a049;
+}
+
+/* Estiliza o texto de pontuação */
+.score {
+    /* Adiciona uma margem superior ao texto de pontuação */
+    margin-top: 20px;
+    /* Define o tamanho da fonte */
+    font-size: 24px;
+    /* Define o peso da fonte como negrito */
+    font-weight: bold;
+}
+
+/* Estilos para telas pequenas (máximo 480px de largura) */
+@media screen and (max-width: 480px) {
+    /* Ajusta o padding do contêiner para telas pequenas */
+    .container {
+        padding: 40px 32px;
+    }
+
+    /* Adiciona um espaçamento à direita nos slots para telas pequenas */
+    .slot {
+        margin-right: 12px;
+    }
+}
